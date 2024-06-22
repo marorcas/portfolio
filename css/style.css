@@ -383,6 +383,15 @@ template {
 .contact #contact-form {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+  width: 50%;
+  height: 40%;
+}
+.contact #contact-form textarea {
+  height: 70%;
+}
+.contact #contact-form #contactBtn {
+  padding: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
