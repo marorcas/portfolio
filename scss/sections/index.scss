@@ -3,4 +3,6 @@
 .index {
     @include m.full-screen;
     @include m.content-center;
+    text-align: center;
 }
+
