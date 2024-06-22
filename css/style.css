@@ -308,6 +308,7 @@ template {
 }
 
 .nav-links {
+  width: 100%;
   position: fixed;
   display: flex;
   justify-content: space-around;
