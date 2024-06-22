@@ -1,8 +1,8 @@
 @use "./partials/normalize";
 
+@use "./sections/navigation.scss";
 @use "./sections/index.scss";
 @use "./sections/about.scss";
 @use "./sections/skills.scss";
 @use "./sections/projects.scss";
 @use "./sections/contact.scss";
-@use "./sections/navigation.scss";
