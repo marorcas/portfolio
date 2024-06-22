@@ -1,15 +1,46 @@
+// @use "../partials/queries" as q;
+
+// .nav-bar {
+//     width: 100%;
+//     @include q.mobile {
+//         width: 90%;
+//     }
+    
+//     @include q.small-tablet {
+//         width: 80%;
+//     }
+      
+//     @include q.tablet {
+//         width: 75%;
+//     }
+      
+//     @include q.large-tablet {
+//         width: 72.5%;
+//     }
+      
+//     @include q.laptop {
+//         width: 70%;
+//     }
+      
+//     @include q.desktop {
+//         width: 65%;
+//     }
+
+// }
+
 .nav-links {
     width: 100%;
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;  
+    justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 15px;
-    margin: 0;
- 
+    padding: 0;
+    margin: 2em auto;
     li {
-        margin: 20px;
+        margin: auto;
+        padding: auto;
 
         a {
             text-decoration: none;

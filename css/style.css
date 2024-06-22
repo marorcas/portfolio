@@ -312,13 +312,15 @@ template {
   position: fixed;
   display: flex;
   justify-content: space-around;
+  justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 15px;
-  margin: 0;
+  padding: 0;
+  margin: 2em auto;
 }
 .nav-links li {
-  margin: 20px;
+  margin: auto;
+  padding: auto;
 }
 .nav-links li a {
   text-decoration: none;
@@ -346,6 +348,7 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .skills {
@@ -355,6 +358,7 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .projects {
@@ -364,6 +368,7 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .contact {
@@ -373,6 +378,7 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
