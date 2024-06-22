@@ -1,0 +1,6 @@
+@use "../partials/mixins" as m;
+
+.skills {
+    @include m.full-screen;
+    @include m.content-center;
+}
