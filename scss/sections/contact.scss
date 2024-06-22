@@ -3,4 +3,9 @@
 .contact {
     @include m.full-screen;
     @include m.content-center;
+    
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+    }
 }

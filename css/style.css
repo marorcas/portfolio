@@ -373,5 +373,9 @@ template {
   justify-content: center;
   align-items: center;
 }
+.contact #contact-form {
+  display: flex;
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=style.css.map */
