@@ -380,5 +380,9 @@ template {
   align-items: center;
   text-align: center;
 }
+.contact #contact-form {
+  display: flex;
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=style.css.map */
