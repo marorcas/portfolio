@@ -9,3 +9,14 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin text-size($small, $medium, $large) {
+    font-size: $medium;
+    &--small {
+        font-size: $small;
+    }
+
+    &--large {
+        font-size: $large;
+    }
+}

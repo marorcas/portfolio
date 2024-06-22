@@ -352,4 +352,24 @@ template {
   align-items: center;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 15px;
+}
+.nav-links li {
+  margin: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.nav-links li a:hover {
+  color: red;
+}
+
 /*# sourceMappingURL=style.css.map */
