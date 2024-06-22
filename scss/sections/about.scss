@@ -3,4 +3,8 @@
 .about {
     @include m.full-screen;
     @include m.content-center;
+
+    #about-para {
+        padding: 0 10%;
+    }
 }

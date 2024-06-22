@@ -350,6 +350,9 @@ template {
   align-items: center;
   text-align: center;
 }
+.about #about-para {
+  padding: 0 10%;
+}
 
 .skills {
   height: 100vh;
