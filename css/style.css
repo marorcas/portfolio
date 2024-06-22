@@ -312,8 +312,8 @@ template {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  padding: 0;
-  margin: 15px;
+  padding: 15px;
+  margin: 0;
 }
 .nav-links li {
   margin: 20px;
@@ -330,6 +330,7 @@ template {
 .index {
   height: 100vh;
   width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,6 +340,7 @@ template {
 .about {
   height: 100vh;
   width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -348,6 +350,7 @@ template {
 .skills {
   height: 100vh;
   width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -357,6 +360,7 @@ template {
 .projects {
   height: 100vh;
   width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -366,6 +370,7 @@ template {
 .contact {
   height: 100vh;
   width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
