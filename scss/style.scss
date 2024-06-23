@@ -7,6 +7,12 @@
 @use "./sections/projects.scss";
 @use "./sections/contact.scss";
 
+@use "./partials/variables" as v;
+
+body {
+    font-family: v.$text-font;
+}
+
 main {
     background-image: url(../assets/background.jpg);
     background-size: cover;

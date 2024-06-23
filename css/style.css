@@ -364,6 +364,25 @@ template {
   align-items: center;
   text-align: center;
 }
+.skills .gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+.skills .gallery img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.skills .gallery img:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
 
 .projects {
   height: 100vh;
@@ -396,6 +415,10 @@ template {
 }
 .contact #contact-form #contactBtn {
   padding: 2px;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
 }
 
 main {
