@@ -33,5 +33,6 @@
 @mixin clickable {
     background-color: v.$medium-color;
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+    color: v.$light-color;
     cursor: pointer;
 }

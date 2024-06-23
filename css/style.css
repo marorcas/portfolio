@@ -307,30 +307,43 @@ template {
   display: none;
 }
 
-.nav-links {
+.nav-bar {
   display: flex;
   justify-content: space-around;
-  justify-content: center;
   align-items: center;
+  text-align: center;
+  height: 60px;
   width: 100%;
   position: fixed;
-  list-style: none;
-  padding: 0;
-  margin: 2em auto;
 }
-.nav-links li {
-  margin: auto;
-  padding: auto;
+.nav-bar .nav-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  height: inherit;
+  width: inherit;
 }
-.nav-links li a {
-  text-decoration: none;
+.nav-bar .nav-link a {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: inherit;
+  width: inherit;
+  text-decoration: none;
 }
-.nav-links li a:hover {
-  color: #F5F6F4;
+.nav-bar .nav-link:hover {
   background-color: #40403A;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  color: #F5F6F4;
+  cursor: pointer;
 }
 
 #index-section .btn-container #view-btn {
@@ -345,6 +358,7 @@ template {
 #index-section .btn-container #view-btn #arrow-right:hover {
   background-color: #40403A;
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  color: #F5F6F4;
   cursor: pointer;
 }
 
@@ -370,6 +384,7 @@ template {
 #skills-section .gallery img:hover {
   background-color: #40403A;
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  color: #F5F6F4;
   cursor: pointer;
 }
 
@@ -391,6 +406,7 @@ template {
 #projects-section .gallery img:hover {
   background-color: #40403A;
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  color: #F5F6F4;
   cursor: pointer;
 }
 

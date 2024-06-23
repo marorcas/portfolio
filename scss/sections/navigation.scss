@@ -30,29 +30,31 @@
 
 // }
 
-.nav-links {
+.nav-bar {
     display: flex;
-    justify-content: space-around;  
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    text-align: center;
+    height: 60px;
     width: 100%;
     position: fixed;
-    list-style: none;
-    padding: 0;
-    margin: 2em auto;
 
-    li {
-        margin: auto;
-        padding: auto;
+    .nav-link {
+        @include m.content-center;
+        flex: 1;
+        height: inherit;
+        width: inherit;
 
         a {
-            text-decoration: none;
             @include m.text-style;
-
-            &:hover {
-                color: v.$light-color;
-                background-color: v.$medium-color;
-            }
+            @include m.content-center;
+            height: inherit;
+            width: inherit;
+            text-decoration: none;
         }
-    }
+
+        &:hover {                
+            @include m.clickable;
+        }
+    } 
 }
