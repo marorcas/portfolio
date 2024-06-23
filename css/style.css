@@ -325,14 +325,11 @@ template {
 .nav-links li a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: #252422;
 }
 .nav-links li a:hover {
   color: #F5F6F4;
-}
-.nav-links li:hover {
-  background-color: #403D39;
-  padding: auto;
+  background-color: #40403A;
 }
 
 .index {

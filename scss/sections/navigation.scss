@@ -1,3 +1,4 @@
+@use "../partials/variables" as v;
 // @use "../partials/queries" as q;
 
 // .nav-bar {
@@ -46,16 +47,12 @@
         a {
             text-decoration: none;
             font-weight: bold;
-            color: black;
+            color: v.$dark-color;
 
             &:hover {
-                color: #F5F6F4;
+                color: v.$light-color;
+                background-color: v.$medium-color;
             }
-        }
-
-        &:hover {
-            background-color: #403D39;
-            padding: auto;
         }
     }
 }
