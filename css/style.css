@@ -338,6 +338,61 @@ template {
   width: inherit;
 }
 
+.popup {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: black;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F5F6F4;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  border-radius: 3%;
+  height: 50%;
+  width: 50%;
+}
+.popup_content {
+  margin-bottom: 20px;
+}
+.popup_content_img {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+.popup_content_link {
+  text-decoration: underline;
+  color: #40403A;
+}
+.popup_close {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  background-color: #252422;
+  color: #F5F6F4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5%;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
 main {
   background-image: url(../assets/background.jpg);
   background-size: cover;
@@ -356,21 +411,21 @@ main .content {
 main .content_btn-container {
   padding: 20px;
 }
-main .content_btn {
+main .content_btn, main .content_gallery_btn {
   border: none;
   background: none;
 }
-main .content_btn_img {
+main .content_btn_img, main .content_gallery_btn_img {
   border: 1px solid white;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-main .content_btn_img--view {
+main .content_btn_img--view, main .content_gallery_btn_img--view {
   height: 50px;
   width: 50px;
   border-radius: 10%;
 }
-main .content_btn_img:hover {
+main .content_btn_img:hover, main .content_gallery_btn_img:hover {
   background-color: #40403A;
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
   color: #F5F6F4;
@@ -387,7 +442,7 @@ main .content_gallery--contact {
 main .content_gallery--projects, main .content_gallery--skills {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-main .content_gallery_img {
+main .content_gallery_btn_img, main .content_gallery_img--contact, main .content_gallery_img--projects, main .content_gallery_img--skills {
   border: 1px solid white;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -396,7 +451,7 @@ main .content_gallery_img {
   object-fit: cover;
   padding: 10px;
 }
-main .content_gallery_img:hover {
+main .content_gallery_btn_img:hover, main .content_gallery_img--contact:hover, main .content_gallery_img--projects:hover, main .content_gallery_img--skills:hover {
   background-color: #40403A;
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
   color: #F5F6F4;

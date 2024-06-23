@@ -13,17 +13,6 @@
     text-align: center;
 }
 
-// @mixin text-size($small, $medium, $large) {
-//     font-size: $medium;
-//     &--small {
-//         font-size: $small;
-//     }
-
-//     &--large {
-//         font-size: $large;
-//     }
-// }
-
 @mixin text-style {
     font-family: v.$text-font;
     font-weight: v.$text-weight;

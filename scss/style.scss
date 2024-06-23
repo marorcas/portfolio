@@ -24,7 +24,7 @@ main {
             @include m.btn-style;
         }
 
-        &_btn {
+        &_btn, &_gallery_btn {
             border: none;
             background: none;
     
@@ -56,7 +56,7 @@ main {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
             }
 
-            &_img {
+            &_btn_img, &_img--contact, &_img--projects, &_img--skills {
                 @include m.icon-style;
                 height: 50px;
                 width: 50px;

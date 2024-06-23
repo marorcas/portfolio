@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Maria | Portfolio</title>
         <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/projects.js" defer></script>
     </head>
     <body>
         <header>
@@ -22,18 +23,30 @@
 
                 <!-- not sure how to arrange yet -->
                 <div class="content_gallery content_gallery--projects">
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
-                    <img src="" class="content_gallery_img" />
+                    <button class="content_gallery_btn content_gallery_btn--p1">
+                        <img src="../assets/node_modules/bootstrap-icons/icons/1-square.svg" class="content_gallery_btn_img" /> 
+                    </button>
+                    <button class="content_gallery_btn content_gallery_btn--p2">
+                        <img src="../assets/node_modules/bootstrap-icons/icons/2-square.svg" class="content_gallery_btn_img" /> 
+                    </button>
+                    <button class="content_gallery_btn content_gallery_btn--p3">
+                        <img src="../assets/node_modules/bootstrap-icons/icons/3-square.svg" class="content_gallery_btn_img" /> 
+                    </button>
+                    <button class="content_gallery_btn content_gallery_btn--p4">
+                        <img src="../assets/node_modules/bootstrap-icons/icons/4-square.svg" class="content_gallery_btn_img" /> 
+                    </button>
+                </div>
+
+                <div class="overlay"></div>
+                <div class="popup">
+                    <div class="popup_content">
+                        <h2 class="popup_content_heading">Project name</h2>
+                        <img src="../assets/node_modules/bootstrap-icons/icons/image.svg" class="popup_content_img" />
+                        <p class="popup_content_desc">Project description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et excepturi aut id quasi non magnam iste, doloribus velit! Eveniet beatae id sint dolor minus fuga incidunt similique ipsum neque consequatur.</p>
+                        <a class="popup_content_link">Live</a>
+                        <a class="popup_content_link">Code</a>
+                    </div>
+                    <button class="popup_close">Close</button>
                 </div>
             </section>
         </main>
