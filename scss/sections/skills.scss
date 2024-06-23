@@ -1,9 +1,4 @@
-@use "../partials/mixins" as m;
-
-.skills {
-    @include m.full-screen;
-    @include m.content-center;
-
+#skills-section {
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

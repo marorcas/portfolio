@@ -1,3 +1,5 @@
+@use "./variables" as v;
+
 @mixin full-screen {
     height: 100vh;
     width: 100%;
@@ -11,13 +13,19 @@
     text-align: center;
 }
 
-@mixin text-size($small, $medium, $large) {
-    font-size: $medium;
-    &--small {
-        font-size: $small;
-    }
+// @mixin text-size($small, $medium, $large) {
+//     font-size: $medium;
+//     &--small {
+//         font-size: $small;
+//     }
 
-    &--large {
-        font-size: $large;
-    }
+//     &--large {
+//         font-size: $large;
+//     }
+// }
+
+@mixin text-style {
+    font-family: v.$text-font;
+    font-weight: v.$text-weight;
+    color: v.$black-color;
 }

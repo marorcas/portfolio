@@ -1,22 +1,10 @@
 @use "../partials/mixins" as m;
 
-.contact {
-    @include m.full-screen;
-    @include m.content-center;
-    
+#contact-section {
     #contact-form {
-        display: flex;
-        flex-direction: column;
+        @include m.content-center;
         gap: 5px;
         width: 50%;
-        height: 40%;
-
-        textarea {
-            height: 70%;
-        }
-
-        #contactBtn {
-            padding: 2px;
-        }
+        padding: 20px;
     }
 }

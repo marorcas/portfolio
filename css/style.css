@@ -308,12 +308,12 @@ template {
 }
 
 .nav-links {
-  width: 100%;
-  position: fixed;
   display: flex;
   justify-content: space-around;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  position: fixed;
   list-style: none;
   padding: 0;
   margin: 2em auto;
@@ -324,53 +324,26 @@ template {
 }
 .nav-links li a {
   text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-  color: #252422;
+  color: black;
 }
 .nav-links li a:hover {
   color: #F5F6F4;
   background-color: #40403A;
 }
 
-.index {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+#about-section #about-text {
+  padding: 0 100px;
 }
 
-.about {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.about #about-para {
-  padding: 0 10%;
-}
-
-.skills {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.skills .gallery {
+#skills-section .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   margin-top: 20px;
 }
-.skills .gallery img {
+#skills-section .gallery img {
   height: 50px;
   width: 50px;
   object-fit: cover;
@@ -379,27 +352,18 @@ template {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.skills .gallery img:hover {
+#skills-section .gallery img:hover {
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-.projects {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.projects .gallery {
+#projects-section .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   margin-top: 20px;
 }
-.projects .gallery img {
+#projects-section .gallery img {
   height: 100px;
   width: 100px;
   object-fit: cover;
@@ -408,36 +372,26 @@ template {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.projects .gallery img:hover {
+#projects-section .gallery img:hover {
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-.contact {
-  height: 100vh;
-  width: 100%;
+#contact-section #contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.contact #contact-form {
-  display: flex;
-  flex-direction: column;
   gap: 5px;
   width: 50%;
-  height: 40%;
-}
-.contact #contact-form textarea {
-  height: 70%;
-}
-.contact #contact-form #contactBtn {
-  padding: 2px;
+  padding: 20px;
 }
 
-body {
+.text {
   font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: black;
 }
 
 main {
@@ -445,6 +399,18 @@ main {
   background-size: cover;
   background-position: 0%;
   background-repeat: no-repeat;
+}
+main .btn-container {
+  padding: 20px;
+}
+main .section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

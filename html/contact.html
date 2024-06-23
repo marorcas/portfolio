@@ -19,15 +19,15 @@
             </nav>
         </header>
         <main>
-            <section class="contact">
-                <h1>Get in contact</h1>
+            <section class="section" id="contact-section">
+                <h1 class="text" id="contact-text">Get in contact</h1>
                 <form id="contact-form">
-                    <input type="name" placeholder="Name" required />
-                    <input type="name" placeholder="Company" />
-                    <input type="email" placeholder="Email" required />
-                    <textarea placeholder="Leave a message..." required></textarea>
-                    <div>
-                        <input type="submit" value="Submit" id="contactBtn" />
+                    <input type="name" id="name" name="name" placeholder="Name" required />
+                    <input type="name" id="company" name="company" placeholder="Company" />
+                    <input type="email" id="email" name="email" placeholder="Email" required />
+                    <textarea id="message" name="message" placeholder="Leave a message..." required></textarea>
+                    <div class="btn-container">
+                        <input type="submit" id="contact-btn" value="Submit" />
                     </div>
                 </form>
             </section>

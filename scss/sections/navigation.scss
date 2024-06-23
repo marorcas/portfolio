@@ -1,3 +1,4 @@
+@use "../partials/mixins" as m;
 @use "../partials/variables" as v;
 // @use "../partials/queries" as q;
 
@@ -30,12 +31,12 @@
 // }
 
 .nav-links {
-    width: 100%;
-    position: fixed;
     display: flex;
     justify-content: space-around;  
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: fixed;
     list-style: none;
     padding: 0;
     margin: 2em auto;
@@ -46,8 +47,7 @@
 
         a {
             text-decoration: none;
-            font-weight: bold;
-            color: v.$dark-color;
+            @include m.text-style;
 
             &:hover {
                 color: v.$light-color;
