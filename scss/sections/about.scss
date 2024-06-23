@@ -1,6 +1,5 @@
-@use "../partials/mixins" as m;
-
-.about {
-    @include m.full-screen;
-    @include m.content-center;
+#about-section {
+    #about-text {
+        padding: 0 100px;
+    }
 }

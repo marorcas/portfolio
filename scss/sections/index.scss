@@ -1,6 +1,21 @@
 @use "../partials/mixins" as m;
+@use "../partials/variables" as v;
 
-.index {
-    @include m.full-screen;
-    @include m.content-center;
+#index-section {
+    .btn-container {
+        #view-btn {
+            border: none;
+            background: none;
+            #arrow-right {
+                @include m.icon-style;
+                height: 50px;
+                width: 50px;
+                border-radius: 10%;
+
+                &:hover {
+                    @include m.clickable;
+                }
+            }
+        }
+    }
 }

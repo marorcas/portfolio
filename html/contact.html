@@ -9,25 +9,23 @@
     <body>
         <header>
             <nav class="nav-bar">
-                <ul class="nav-links">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./skills.html">Skills</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
+                <div class="nav-link"><a href="./index.html">Home</a></div>
+                <div class="nav-link"><a href="./about.html">About</a></div>
+                <div class="nav-link"><a href="./skills.html">Skills</a></div>
+                <div class="nav-link"><a href="./projects.html">Projects</a></div>
+                <div class="nav-link"><a href="./contact.html">Contact</a></div>
             </nav>
         </header>
         <main>
-            <section class="contact">
-                <h1>Contact me</h1>
-                <form id="contactForm">
+            <section class="section" id="contact-section">
+                <h1 class="text" id="contact-text">Get in contact</h1>
+                <form id="contact-form">
                     <input type="name" id="name" name="name" placeholder="Name" required />
                     <input type="name" id="company" name="company" placeholder="Company" />
                     <input type="email" id="email" name="email" placeholder="Email" required />
                     <textarea id="message" name="message" placeholder="Leave a message..." required></textarea>
-                    <div>
-                        <input type="submit" id="contactBtn" value="Submit" />
+                    <div class="btn-container">
+                        <input type="submit" id="contact-btn" value="Submit" />
                     </div>
                 </form>
             </section>

@@ -1,6 +1,22 @@
 @use "../partials/mixins" as m;
 
-.skills {
-    @include m.full-screen;
-    @include m.content-center;
+#skills-section {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin-top: 20px;
+
+        img {
+            @include m.icon-style;
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            padding: 10px;
+
+            &:hover {
+                @include m.clickable;
+            }
+        }
+    }
 }

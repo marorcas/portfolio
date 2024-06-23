@@ -1,6 +1,22 @@
 @use "../partials/mixins" as m;
 
-.projects {
-    @include m.full-screen;
-    @include m.content-center;
+#projects-section {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin-top: 20px;
+
+        img {
+            @include m.icon-style;
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            padding: 10px;
+
+            &:hover {
+                @include m.clickable;
+            }
+        }
+    }
 }

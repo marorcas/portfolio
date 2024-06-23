@@ -6,3 +6,28 @@
 @use "./sections/skills.scss";
 @use "./sections/projects.scss";
 @use "./sections/contact.scss";
+
+@use "./partials/variables" as v;
+@use "./partials/mixins" as m;
+
+
+.text {
+    @include m.text-style;
+}
+
+main {
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+
+    .btn-container {
+        padding: 20px;
+    }
+
+    .section {
+        @include m.full-screen;
+        @include m.content-center;
+    }
+}
+
