@@ -333,6 +333,19 @@ template {
   background-color: #40403A;
 }
 
+#index-section .btn-container #view-btn {
+  border: none;
+  background: none;
+}
+#index-section .btn-container #view-btn #arrow-right {
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+}
+#index-section .btn-container #view-btn #arrow-right:hover {
+  background-color: #40403A;
+}
+
 #about-section #about-text {
   padding: 0 100px;
 }
