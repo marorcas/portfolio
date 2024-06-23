@@ -38,6 +38,7 @@
     list-style: none;
     padding: 0;
     margin: 2em auto;
+
     li {
         margin: auto;
         padding: auto;
@@ -48,8 +49,13 @@
             color: black;
 
             &:hover {
-                color: red;
+                color: #F5F6F4;
             }
+        }
+
+        &:hover {
+            background-color: #403D39;
+            padding: auto;
         }
     }
 }

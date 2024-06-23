@@ -328,7 +328,11 @@ template {
   color: black;
 }
 .nav-links li a:hover {
-  color: red;
+  color: #F5F6F4;
+}
+.nav-links li:hover {
+  background-color: #403D39;
+  padding: auto;
 }
 
 .index {
@@ -395,6 +399,13 @@ template {
 }
 .contact #contact-form #contactBtn {
   padding: 2px;
+}
+
+main {
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-position: 0%;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
