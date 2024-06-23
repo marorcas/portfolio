@@ -466,4 +466,17 @@ main .content_para--about {
   padding: 0 100px;
 }
 
+footer {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  z-index: 1000;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: #F5F6F4;
+}
+
 /*# sourceMappingURL=style.css.map */

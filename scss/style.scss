@@ -79,3 +79,16 @@ main {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+    z-index: 1000;
+
+    font-family: v.$text-font;
+    font-weight: v.$text-weight;
+    color: v.$light-color;
+}
