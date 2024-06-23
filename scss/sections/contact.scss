@@ -1,22 +1,23 @@
 @use "../partials/mixins" as m;
 
 #contact-section {
-    #contact-form {
-        @include m.content-center;
-        gap: 5px;
-        width: 50%;
-        padding: 20px;
-
-        .btn-container {
-            #contact-btn {
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            margin-top: 20px;
+    
+            .contact-icon {
                 @include m.icon-style;
                 height: 50px;
                 width: 50px;
+                object-fit: cover;
+                padding: 10px;
     
                 &:hover {
                     @include m.clickable;
                 }
             }
-        }
+        // }
     }
 }
