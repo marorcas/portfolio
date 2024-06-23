@@ -36,3 +36,9 @@
     color: v.$light-color;
     cursor: pointer;
 }
+
+@mixin icon-style {
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

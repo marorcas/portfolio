@@ -310,19 +310,11 @@ template {
 .nav-bar {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  text-align: center;
   height: 60px;
   width: 100%;
   position: fixed;
 }
 .nav-bar .nav-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex: 1;
   height: inherit;
   width: inherit;
 }
@@ -339,7 +331,7 @@ template {
   width: inherit;
   text-decoration: none;
 }
-.nav-bar .nav-link:hover {
+.nav-bar .nav-link:active, .nav-bar .nav-link:hover {
   background-color: #40403A;
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
   color: #F5F6F4;
@@ -351,6 +343,9 @@ template {
   background: none;
 }
 #index-section .btn-container #view-btn #arrow-right {
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 50px;
   width: 50px;
   border-radius: 10%;
@@ -373,13 +368,13 @@ template {
   margin-top: 20px;
 }
 #skills-section .gallery img {
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 50px;
   width: 50px;
   object-fit: cover;
   padding: 10px;
-  border: 1px solid white;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #skills-section .gallery img:hover {
   background-color: #40403A;
@@ -395,13 +390,13 @@ template {
   margin-top: 20px;
 }
 #projects-section .gallery img {
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 100px;
   width: 100px;
   object-fit: cover;
   padding: 10px;
-  border: 1px solid white;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #projects-section .gallery img:hover {
   background-color: #40403A;

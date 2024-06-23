@@ -33,15 +33,11 @@
 .nav-bar {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    text-align: center;
     height: 60px;
     width: 100%;
     position: fixed;
 
     .nav-link {
-        @include m.content-center;
-        flex: 1;
         height: inherit;
         width: inherit;
 
@@ -53,7 +49,9 @@
             text-decoration: none;
         }
 
-        &:hover {                
+        // hover works for websites only
+        // added active for touch devices
+        &:active, &:hover {                
             @include m.clickable;
         }
     } 
