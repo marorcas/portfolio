@@ -10,24 +10,72 @@
 @use "./partials/variables" as v;
 @use "./partials/mixins" as m;
 
-
-.text {
-    @include m.text-style;
-}
-
 main {
     background-image: url(../assets/background.jpg);
     background-size: cover;
     background-position: 0%;
     background-repeat: no-repeat;
 
-    .btn-container {
-        padding: 20px;
-    }
-
-    .section {
+    .content {
         @include m.full-screen;
         @include m.content-center;
+
+        &_btn-container {
+            @include m.btn-style;
+        }
+
+        &_btn {
+            border: none;
+            background: none;
+    
+            &_img {
+                @include m.icon-style;
+
+                &--view {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 10%;
+                }
+    
+                &:hover {
+                    @include m.clickable;
+                }
+            }
+        }
+
+        &_gallery {
+            display: grid;
+            grid-gap: 10px;
+            margin-top: 20px;
+
+            &--contact {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            &--projects, &--skills {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            &_img {
+                @include m.icon-style;
+                height: 50px;
+                width: 50px;
+                object-fit: cover;
+                padding: 10px;
+        
+                &:hover {
+                    @include m.clickable;
+                }
+            }
+        }
+
+        &_heading, &_para {
+            @include m.text-style;
+        }
+
+        &_para--about {
+            padding: 0 100px;
+        }
     }
 }
 

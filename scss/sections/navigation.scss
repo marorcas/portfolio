@@ -30,29 +30,29 @@
 
 // }
 
-.nav-bar {
+.navbar {
     display: flex;
     justify-content: space-around;
     height: 60px;
     width: 100%;
     position: fixed;
 
-    .nav-link {
+    &_link {
+        @include m.text-style;
+        @include m.content-center;
         height: inherit;
         width: inherit;
-
-        a {
-            @include m.text-style;
-            @include m.content-center;
-            height: inherit;
-            width: inherit;
-            text-decoration: none;
-        }
+        text-decoration: none;
 
         // hover works for websites only
         // added active for touch devices
         &:active, &:hover {                
             @include m.clickable;
         }
+    }
+
+    &_link_container {
+        height: inherit;
+        width: inherit;
     } 
 }
