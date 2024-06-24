@@ -358,6 +358,21 @@ template {
   height: 50%;
   width: 50%;
 }
+@media screen and (max-height: 896px) {
+  .popup {
+    height: 60%;
+  }
+}
+@media screen and (max-height: 812px) {
+  .popup {
+    height: 70%;
+  }
+}
+@media screen and (max-height: 680px) {
+  .popup {
+    height: 80%;
+  }
+}
 .popup_content {
   margin-bottom: 20px;
 }
@@ -425,7 +440,7 @@ main .content_btn_img--view, main .content_gallery_btn_img--view {
   width: 50px;
   border-radius: 10%;
 }
-main .content_btn_img:hover, main .content_gallery_btn_img:hover {
+main .content_btn_img:active, main .content_btn_img:hover, main .content_gallery_btn_img:active, main .content_gallery_btn_img:hover {
   background-color: #40403A;
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
   color: #F5F6F4;
@@ -451,7 +466,7 @@ main .content_gallery_btn_img, main .content_gallery_img--contact, main .content
   object-fit: cover;
   padding: 10px;
 }
-main .content_gallery_btn_img:hover, main .content_gallery_img--contact:hover, main .content_gallery_img--projects:hover, main .content_gallery_img--skills:hover {
+main .content_gallery_btn_img:active, main .content_gallery_btn_img:hover, main .content_gallery_img--contact:active, main .content_gallery_img--contact:hover, main .content_gallery_img--projects:active, main .content_gallery_img--projects:hover, main .content_gallery_img--skills:active, main .content_gallery_img--skills:hover {
   background-color: #40403A;
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
   color: #F5F6F4;
@@ -465,15 +480,23 @@ main .content_heading, main .content_para {
 main .content_para--about {
   padding: 0 100px;
 }
+@media screen and (max-height: 812px) {
+  main .content_para--about {
+    padding: 20px;
+  }
+}
+@media screen and (max-height: 896px) {
+  main .content_para--about {
+    padding: 15px;
+  }
+}
 
 footer {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   width: 100%;
   position: fixed;
   bottom: 0;
-  right: 2%;
-  z-index: 1000;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   color: #F5F6F4;

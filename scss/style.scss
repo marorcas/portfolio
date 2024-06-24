@@ -9,6 +9,7 @@
 
 @use "./partials/variables" as v;
 @use "./partials/mixins" as m;
+@use "./partials/queries" as q;
 
 main {
     background-image: url(../assets/background.jpg);
@@ -37,7 +38,7 @@ main {
                     border-radius: 10%;
                 }
     
-                &:hover {
+                &:active, &:hover {
                     @include m.clickable;
                 }
             }
@@ -63,7 +64,7 @@ main {
                 object-fit: cover;
                 padding: 10px;
         
-                &:hover {
+                &:active, &:hover {
                     @include m.clickable;
                 }
             }
@@ -75,18 +76,24 @@ main {
 
         &_para--about {
             padding: 0 100px;
+
+            @include q.small-screen {
+                padding: 20px;
+            }
+
+            @include q.medium-screen {
+                padding: 15px;
+            }
         }
     }
 }
 
 footer {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     width: 100%;
     position: fixed;
     bottom: 0;
-    right: 2%;
-    z-index: 1000;
 
     font-family: v.$text-font;
     font-weight: v.$text-weight;
