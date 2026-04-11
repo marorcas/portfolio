@@ -1,6 +1,7 @@
 # Portfolio v1
 
 My first attempt at creating a portfolio to showcase my software projects.
+Note: This portfolio is no longer in use. See [this link](https://github.com/marorcas/marorcas.github.io) for my currently active portfolio. 
 
 ## Description
 
